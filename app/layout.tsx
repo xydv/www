@@ -9,9 +9,10 @@ import { ViewTransitions } from "next-view-transitions";
 const funnelSans = Funnel_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "portfolio & blog",
-  description: "my personal portfolio and blog",
-  metadataBase: new URL("https://example.com"),
+  title: "aditya yadav",
+  description: "aditya yadav's personal website",
+  metadataBase: new URL("https://aditya.stream"),
+  icons: { icon: "https://avatars.githubusercontent.com/u/84765888?v=4" },
   viewport: {
     width: "device-width",
     initialScale: 1,

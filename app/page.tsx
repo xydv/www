@@ -1,9 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "next-view-transitions";
-import { SpotifyWidget } from "@/components/spotify-widget";
+import { MusicWidget } from "@/components/music-widget";
 import { ArrowRight } from "lucide-react";
 import { projectsData } from "@/data/projects";
+import { SSEProvider } from "react-hooks-sse";
 
 export default function Home() {
   // Get the first 3 projects for the homepage
@@ -77,14 +80,9 @@ export default function Home() {
 
       <section className="space-y-3 md:space-y-5">
         <h2 className="text-xl sm:text-2xl font-bold">now playing</h2>
-        <SpotifyWidget
-          songTitle="dil ke ujle kagaz par"
-          artistName="chitra singh & jagjit singh"
-          albumArt="https://i.scdn.co/image/ab67616d0000b2737da152b4dfd36d6c4051967c"
-          isPlaying={false}
-          duration={180}
-          progress={45}
-        />
+        <SSEProvider endpoint="https://dedomil.alwaysdata.net">
+          <MusicWidget />
+        </SSEProvider>
       </section>
     </div>
   );
