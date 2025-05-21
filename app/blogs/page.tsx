@@ -8,44 +8,11 @@ import { Link } from "next-view-transitions";
 // Mock blog data
 const blogPosts = [
   {
-    id: "blog1",
-    title: "getting started with next.js",
-    date: "may 15, 2023",
-    summary:
-      "learn how to set up a next.js project from scratch and build your first application.",
-    slug: "getting-started-with-nextjs",
-  },
-  {
-    id: "blog2",
-    title: "the power of server components",
-    date: "june 2, 2023",
-    summary:
-      "explore how react server components can improve performance and user experience.",
-    slug: "power-of-server-components",
-  },
-  {
-    id: "blog3",
-    title: "building a portfolio with shadcn/ui",
-    date: "june 20, 2023",
-    summary:
-      "a step-by-step guide to creating a professional portfolio website using shadcn/ui components.",
-    slug: "building-portfolio-with-shadcn-ui",
-  },
-  {
-    id: "blog4",
-    title: "optimizing images in next.js",
-    date: "july 5, 2023",
-    summary:
-      "best practices for image optimization in next.js applications to improve loading times.",
-    slug: "optimizing-images-nextjs",
-  },
-  {
-    id: "blog5",
-    title: "typescript tips for react developers",
-    date: "july 18, 2023",
-    summary:
-      "practical typescript tips and tricks to improve your react development workflow.",
-    slug: "typescript-tips-react-developers",
+    id: "1",
+    title: "hello world",
+    date: "may 21, 2025",
+    summary: "my first blog post",
+    slug: "hello-world",
   },
 ];
 
